@@ -32,7 +32,7 @@
 			if (key.length) {
 				createLoader();
 				// check api key by fetching models
-				fetch('https://api.openai.com/v1/models', {
+				fetch('https://https://aiagent.centaline.com.cn/models', {
 					method: 'GET',
 					headers: {
 						'Authorization': 'Bearer ' + key

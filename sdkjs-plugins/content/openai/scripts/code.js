@@ -514,32 +514,32 @@
 		switch (type) {
 			case 1:
 				settings.messages = [ { role: 'user', content: `Summarize this text: "${text}"` } ];
-				url = 'https://api.openai.com/v1/chat/completions';
+				url = 'https://https://aiagent.centaline.com.cn/chat/completions';
 				break;
 
 			case 2:
 				settings.messages = [ { role: 'user', content: `Get Key words from this text: "${text}"` } ];
-				url = 'https://api.openai.com/v1/chat/completions';
+				url = 'https://https://aiagent.centaline.com.cn/chat/completions';
 				break;
 
 			case 3:
 				settings.messages = [ { role: 'user', content: `What does it mean "${text}"?` } ];
-				url = 'https://api.openai.com/v1/chat/completions';
+				url = 'https://https://aiagent.centaline.com.cn/chat/completions';
 				break;
 
 			case 4:
 				settings.messages = [ { role: 'user', content: `Give a link to the explanation of the word "${text}"` } ];
-				url = 'https://api.openai.com/v1/chat/completions';
+				url = 'https://https://aiagent.centaline.com.cn/chat/completions';
 				break;
 
 			case 5:
 				settings.messages = [ { role: 'user', content: text } ];
-				url = 'https://api.openai.com/v1/chat/completions';
+				url = 'https://https://aiagent.centaline.com.cn/chat/completions';
 				break;
 
 			case 6:
 				settings.messages = [ { role: 'user', content: text } ];
-				url = 'https://api.openai.com/v1/chat/completions';
+				url = 'https://https://aiagent.centaline.com.cn/chat/completions';
 				break;
 
 			case 7:
@@ -549,22 +549,22 @@
 				settings.n = 1;
 				settings.size = `${imgsize.width}x${imgsize.height}`;
 				settings.response_format = 'b64_json';
-				url = 'https://api.openai.com/v1/images/generations';
+				url = 'https://https://aiagent.centaline.com.cn/images/generations';
 				break;
 
 			case 8:
 				settings.messages = [ { role: 'user', content: `What does it mean "${text}"?` } ];
-				url = 'https://api.openai.com/v1/chat/completions';
+				url = 'https://https://aiagent.centaline.com.cn/chat/completions';
 				break;
 
 			case 9:
 				settings.messages = [ { role: 'user', content: `Give synonyms for the word "${text}" as javascript array` } ];
-				url = 'https://api.openai.com/v1/chat/completions';
+				url = 'https://https://aiagent.centaline.com.cn/chat/completions';
 				break;
 
 			case 10:
 				imageToBlob(text).then(function(obj) {
-					url = 'https://api.openai.com/v1/images/variations';
+					url = 'https://https://aiagent.centaline.com.cn/images/variations';
 					const formdata = new FormData();
 					formdata.append('image', obj.blob);
 					formdata.append('size', obj.size.str);
@@ -576,27 +576,27 @@
 
 			case 11:
 				settings.messages = [ { role: 'user', content: `Сorrect the errors in this text: ${text}`} ];
-				url = 'https://api.openai.com/v1/chat/completions';
+				url = 'https://https://aiagent.centaline.com.cn/chat/completions';
 				break;
 
 			case 12:
 				settings.messages = [ { role: 'user', content: `Rewrite differently and give result on the same language: ${text}`} ];
-				url = 'https://api.openai.com/v1/chat/completions';
+				url = 'https://https://aiagent.centaline.com.cn/chat/completions';
 				break;
 			
 			case 13:
 				settings.messages = [ { role: 'user', content: `Make this text longer and give result on the same language: ${text}`} ];
-				url = 'https://api.openai.com/v1/chat/completions';
+				url = 'https://https://aiagent.centaline.com.cn/chat/completions';
 				break;
 
 			case 14:
 				settings.messages = [ { role: 'user', content: `Make this text simpler and give result on the same language: ${text}`} ];
-				url = 'https://api.openai.com/v1/chat/completions';
+				url = 'https://https://aiagent.centaline.com.cn/chat/completions';
 				break;
 
 			case 15:
 				settings.messages = [ { role: 'user', content: `Make this text shorter and save language: ${text}`} ];
-				url = 'https://api.openai.com/v1/chat/completions';
+				url = 'https://https://aiagent.centaline.com.cn/chat/completions';
 				break;
 		}
 		if (type !== 10)
